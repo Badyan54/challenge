@@ -1,0 +1,76 @@
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.dropdawn-tab{
+    position: relative;
+}
+
+.dropdawn-tab svg{
+    position: relative;
+    right: 0px;
+    bottom: -2px;
+}
+
+.menu li{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    float: left;
+    height: auto;
+}
+
+.menu li a{
+    display: block;
+    padding: 0 12px;
+    line-height: 28px;
+    text-decoration: none;
+    line-height: 28px;
+    transition: background-color .2s ease-in-out;
+}
+
+.menu li:hover > a {  color: #000; }
+.menu li:hover {background-color: #e1dada;}
+
+.menu ul{
+    position: absolute;
+    top: 56px;
+    background-color: #101010;
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity .0s ease .24s;
+}
+
+
+.menu li:hover > ul { opacity: 1;}
+
+
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: height .25s ease .1s;
+}
+
+.menu li:hover > ul li {
+    height: 48px;
+    overflow: visible;
+    padding: 0;
+}
+
+.menu ul li a {
+    width: 180px;
+    color: #ffffff;
+    padding: 10px 0 10px 40px;
+    margin: 0;
+}

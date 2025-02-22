@@ -1,0 +1,125 @@
+@media (max-width: 1234px){
+    h1{ 
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+    h3{
+        font-size: 2.1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 0.8rem;
+    }
+    .retreat{
+        padding-inline: 70px;
+    }
+    .search{
+        width: 30vw;
+        min-height: 2.4em;
+    }
+    p, li{
+        font-size: 15px;
+    }
+    .star1{
+        top:250px;
+    }
+
+}
+
+@media (max-width: 1040px){
+    h1{ 
+        font-size: 3.0rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+    p, li{
+        font-size: 14px;
+    }
+    .retreat{
+        padding-inline: 64px;
+    }
+    .search{
+        width: 28vw;
+    }
+    .star1{
+        top:220px;
+    }
+    .menu li a{ padding: 0 8px; }
+    .menu ul li a{ padding-left: 20px; }
+    header{ margin: 12px 0; }
+}
+
+@media (max-width: 950px){
+    h1{ 
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    h5{
+        font-size: 0.7rem;
+    }
+    p, li{
+        font-size: 13px;
+    }
+    .retreat{
+        padding-inline: 50px;
+    }
+    .search{
+        width: 26vw;
+    }
+    .menu li a{
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 860px){
+    .burger-menu{display: flex;}
+    .header-nav{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;left: 0;right: 0;bottom: 0;
+        padding: 100px 0;
+        height: 100vh;
+        width: 220px;
+        z-index: 99;
+        background-color:  #101010;
+        
+    }
+    nav > ul{display: flex; flex-direction: column;}
+
+    .menu li a{ color:white;}
+    .menu li a svg path{ fill: #fff; }
+
+    .menu li{
+        padding: 10px 0 10px 44px;
+    }
+    .menu ul{
+        top: 0;
+        left: 220px;
+        border-radius: 0px 0px;
+
+    }
+    .search::placeholder{ opacity: 0;}
+    .search{
+        background-color: transparent;
+        width: 0;
+        height: 0;
+    }
+}
