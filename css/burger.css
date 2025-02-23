@@ -1,17 +1,21 @@
 .burger-menu{
+    box-sizing: border-box;
+    padding: 0;
     display: none;
     position: relative;
-    justify-content: flex-end;
     align-items: center;
     z-index: 100;
     width: 24px;
     height: 20px;
     margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .burger-menu span{
     height: 2px;
-    width: 99%;
+    width: 80%;
     transform: scale(1);
     background-color: rgb(0, 0, 0);
 }
@@ -27,6 +31,10 @@
 .burger-menu::before{ top: 0px; }
 .burger-menu::after{ bottom: 0px;} 
 
+.burger-menu.active{
+    position: fixed;
+    left: 44px;
+}
 .burger-menu.active span { transform: scale(0); }
 
 .burger-menu.active::before{
@@ -34,9 +42,22 @@
     transform: rotate(-45deg) translate(0, -50%);
     background-color: #fff;
 }
-
 .burger-menu.active::after{
     bottom:50%;
     transform: rotate(45deg) translate(0, 50%);
     background-color: #fff;
 }
+
+.header-nav{animation: slideInFromRight 1s ease forwards;}
+
+.header-nav.active { display: flex; }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(-100%); 
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+  

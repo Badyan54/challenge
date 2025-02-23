@@ -6,7 +6,7 @@
         font-size: 2.6rem;
     }
     h3{
-        font-size: 2.1rem;
+        font-size: 1.9rem;
     }
     h4{
         font-size: 1rem;
@@ -17,7 +17,7 @@
     .retreat{
         padding-inline: 70px;
     }
-    .search{
+    .search-holder{
         width: 30vw;
         min-height: 2.4em;
     }
@@ -38,7 +38,7 @@
         font-size: 2.4rem;
     }
     h3{
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
     p, li{
         font-size: 14px;
@@ -46,7 +46,7 @@
     .retreat{
         padding-inline: 64px;
     }
-    .search{
+    .search-holder{
         width: 28vw;
     }
     .star1{
@@ -65,7 +65,7 @@
         font-size: 2.2rem;
     }
     h3{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     h4{
         font-size: 0.8rem;
@@ -79,19 +79,41 @@
     .retreat{
         padding-inline: 50px;
     }
-    .search{
+    .search-holder{
         width: 26vw;
     }
     .menu li a{
         padding: 0 6px;
     }
+    .hero-section{padding-top: 5%;}
+    .hero-section button{ margin-bottom: 6%;}
+    .statistics{ flex-wrap: wrap; }
+    .statistics  div:last-child{
+        flex-basis: 100%;
+        margin-top: 4px;
+    }
+    .statistics  div div{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .star1{
+        top:190px;
+        left: 20px;
+    }
+    .statistics .vertical-line:nth-last-child(2){ display: none;}
 }
-
 @media (max-width: 860px){
-    .burger-menu{display: flex;}
+    h1{ font-size: 2.5rem }
+    /* h2{} */
+    h3{ font-size: 1.2rem;}
+    .retreat{ padding-inline: 40px; }
+    .search-holder{ width: 44vw;}
+    .search-container input{ min-height: 40px;}
+    .market-name{ font-size: 1.7rem;}
+    .burger-menu{ display: flex; }
     .header-nav{
         box-sizing: border-box;
-        display: flex;
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 0;left: 0;right: 0;bottom: 0;
@@ -100,8 +122,13 @@
         width: 220px;
         z-index: 99;
         background-color:  #101010;
-        
     }
+
+    .star1{
+        top:170px;
+        left: 26px;
+    }
+
     nav > ul{display: flex; flex-direction: column;}
 
     .menu li a{ color:white;}
@@ -116,10 +143,53 @@
         border-radius: 0px 0px;
 
     }
-    .search::placeholder{ opacity: 0;}
-    .search{
-        background-color: transparent;
-        width: 0;
-        height: 0;
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 2.4rem
+    }
+    .retreat{
+        padding-inline: 16px;
+    }
+
+    .star1{
+        top:130px;
+        left: 40px;
+    }
+    /* .main-conteiner{
+        flex-direction: column;
+    } */
+    .hero-section{
+        padding: 4% 0px;
+        
+    }
+    .hero-section > p{
+        margin: 3% 0;
+    }
+}
+
+@media (max-width: 682px){
+    .main-conteiner{
+        flex-direction: column;
+    }
+    .hero-section{
+        box-sizing: border-box;
+        padding-inline: 80px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .people{ margin-inline: auto;}
+    .star1{
+        top:110px;
+        left: -40px;
+    }
+    .star2{
+        top:38px;
+        right: -12px;
+    }
+    .footer-main{
+        padding-block: 22px;
     }
 }

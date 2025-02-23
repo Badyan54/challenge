@@ -1,7 +1,12 @@
 .search-holder{
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
-  width: 34vw;
+  width: 33vw;
+}
+
+.search-container{
+  width: 100%;
 }
 
 .input{
@@ -22,61 +27,26 @@
   outline: none;
 }
 
-
 .search-container{
   box-sizing: border-box;
   position: relative;
-  width: 30px;
-  transition: all 0.5s cubic-bezier(.68, -0.55, 0.265, 1.55);
 }
-
-.search-container.active{
-  width: 34vw
-}
-
-.search-container input{  
-  border: none;
-  cursor: default;
-  background-color: #fff;
-  font-size: 18px;
-  border-radius: 50px;
-  opacity: 0;
-  transition: all 0.5s cubic-bezier(.68, -0.55, 0.265, 1.55);
-}
-
-
-.search-container input.active{
-  opacity: 1;
-  cursor: text;
-  padding-right:20px;
-}
-
 .search-container button{
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%) rotate(360deg);
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  border-radius: 50px;
-  border: none;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(.68, -0.55, 0.265, 1.55);
+  top:50%;
+  transform: translateY(-50%) ;
+  left: 16px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
 }
-.search-container button svg path{ fill: black}
+.search-container button svg path{ fill: #00000066}
 
-.search-container button.active svg path{ fill: white}
-.search-container button.active{
-  left: 5px;
-  transform: translateY(-50%);
-  height: 36px;
-  width: 36px;
-  background-color: #000;
-}
 
 
 
