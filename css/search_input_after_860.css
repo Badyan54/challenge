@@ -4,7 +4,7 @@
 }
 
 .search-container.active{
-  width: 100%
+  width: 100%;
 }
 
 .search-container input{
@@ -25,6 +25,7 @@
 
 .search-container button{
   left:0;
+  transform: translateY(-50%);
   height: 40px;
   width: 40px;
   transition: all 0.5s cubic-bezier(.68, -0.55, 0.265, 1.55);
@@ -34,7 +35,6 @@
 .search-container button.active svg path{ fill:#00000066}
 .search-container button.active{
   left: 5px;
-  transform: translateY(-50%);
   height: 36px;
   width: 36px;
 }

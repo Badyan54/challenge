@@ -110,6 +110,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     padding: 18px 0;
     position: sticky;
     top: 0;
@@ -212,8 +213,10 @@ header{
 
 .footer-main{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    flex-wrap: wrap;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -221,7 +224,7 @@ header{
     background-color: #000;
     width: 100vw;
     box-sizing: border-box;
-    padding: 2vw 80px;
+    padding-block: 26px;
 }
 
 .footer-main img{

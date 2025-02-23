@@ -54,7 +54,7 @@
     }
     .menu li a{ padding: 0 8px; }
     .menu ul li a{ padding-left: 20px; }
-    header{ margin: 12px 0; }
+    /* header{ margin: 12px 0; } */
 }
 
 @media (max-width: 950px){
@@ -149,6 +149,10 @@
     h1{
         font-size: 2.4rem
     }
+    .burger-menu{
+        margin-top: 1px;
+    }
+    
     .retreat{
         padding-inline: 16px;
     }
@@ -157,9 +161,6 @@
         top:130px;
         left: 40px;
     }
-    /* .main-conteiner{
-        flex-direction: column;
-    } */
     .hero-section{
         padding: 4% 0px;
         
@@ -167,9 +168,18 @@
     .hero-section > p{
         margin: 3% 0;
     }
+    .footer-main{ padding-block: 20px;}
 }
 
 @media (max-width: 682px){
+    /* .footer-main:nth-child(4){
+        flex-basis: 0 0 50%;
+    }
+    .footer-main:nth-child(5){
+        flex-basis: 0 0 50%;
+    } */
+
+
     .main-conteiner{
         flex-direction: column;
     }
@@ -180,16 +190,52 @@
         width: 100%;
         padding-bottom: 0;
     }
-    .people{ margin-inline: auto;}
+    .people{
+        margin-inline: auto;
+        width: 80%;
+    }
     .star1{
-        top:110px;
-        left: -40px;
+        top:173px;
+        left: 56px;
     }
     .star2{
-        top:38px;
-        right: -12px;
+        top:49px;
+        right: 34px;
     }
     .footer-main{
         padding-block: 22px;
     }
+    .input {
+        font-size: 14px;
+    }
+      
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer-main:nth-child(4){ flex-basis: 40%; }
+    .footer-main{ padding: 30px 80px;}
+    .footer-main img{ height: 4vw; }
+}
+
+@media (max-width: 536px){
+    .hero-section{
+        padding-inline: 30px;
+        text-align: inherit;
+    }
+    .statistics{ justify-content: space-around;}
+    .hero-section button{ width: 100%;}
+    .sign-offer{ font-size: 12px; }
+    .search-holder{ width: 40vw; }
+    .input{ padding-left: 40px; }
+    .search-holder{ width: auto; }
+    .market-name.hide{ display: none;}
+    .footer-main img{ height: 4vw; }
+}
+@media (max-width: 438px){
+    h1 { font-size: 36px; }
+    .people{ width: 100%; }
+    .footer-main{justify-content: space-around;}
+    .footer-main img{ height: 4vw; }
+    .hero-section{ padding-inline: 10px; }
 }

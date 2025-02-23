@@ -1,3 +1,4 @@
+let marketName = document.querySelector('.market-name')
 let searchContainer = document.querySelector('.search-container')
 let searchBtn = searchContainer.querySelector('button');
 let searchInput = searchContainer.querySelector('input')
@@ -6,6 +7,10 @@ const togleAction = (action) =>{
   searchBtn.classList[action]("active")
   searchContainer.classList[action]("active")
   searchInput.classList[action]("active")
+  setTimeout(() =>{
+    marketName.classList[action]("hide")
+  }, 230)
+  
 }
 
 searchBtn.onclick = function () {
